@@ -1,0 +1,36 @@
+header h1{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 80px;
+    font-weight: 700;
+    line-height: normal;
+    font-style: normal;
+    margin-bottom: 40px;
+    margin-top: 45px;
+
+}
+header p,header .quote{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 35px;
+    font-weight: 400;
+    line-height: normal;
+    font-style: normal;
+    margin-bottom: 40px;
+    
+}
+header .container button{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: normal;
+    font-style: normal;
+    background-color: blue;
+    color: white !important;
+    padding: 40px 90px;
+    transition: all 0.3s ease-in-out;
+    margin-bottom: 40px;
+    
+}
+header .container button:hover{
+    background-color: green;
+}
+
