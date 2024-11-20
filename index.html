@@ -1,41 +1,103 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Bookmark</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=PT+Sans+Caption:wght@400;700&family=Pacifico&family=Righteous&display=swap"
+        rel="stylesheet">
 
     <!-- START BOOTSTRAP -->
     <link rel="stylesheet" href="./css/bootstrap.min.css" />
     <!-- END BOOTSTRAP -->
 
-
+    <link rel="stylesheet" href="./css/all.min.css" />
     <!-- START MAIN CSS -->
     <link rel="stylesheet" href="./css/main.css" />
     <!-- END MAIN CSS -->
 </head>
+
 <body>
-    <header>
-        <div class="container text-center d-flex flex-column align-items-center">
-            <h1>Quote of the day</h1>
-            <p>Press the button below to recieve a random quote!</p>
-            <button type="button" onclick="generateQuote()" class="btn rounded-2 ">New Quote</button>
-            <div id="quote" class="quote">
+    <section class=" container">
+        <dv class=" d-flex justify-content-center">
+            <h1>Bookmarker</h1>
+        </dv>
+
+        <div class="in-section d-flex  justify-content-center">
+            <i class="fa-solid fa-bookmark"></i>
+            <h2> &nbspBookmark your favourite sites&nbsp</h2>
+            <i class="fa-solid fa-bookmark"></i>
         </div>
-        
-    </header>
+
+        <div class="inputs container">
+            <div class=" mb-4">
+                <span class="mb-2"><i class="fa-solid fa-book-bookmark"></i> &nbspSite Name</span>
+                <label for="siteName" class="form-label"></label>
+                <input oninput="validateName()" type="text"
+                    class="form-control  focus-ring focus-ring-warning mt-2 border border-secondary-subtle"
+                    id="siteName" placeholder="Bookmark Name" />
+                <p id="nameErr" class="alert alert-danger py-1 d-none">This should be atleast contain 3 characters. </p>
+            </div>
+            <div class=" mb-4 ">
+                <span><i class="fa-solid fa-link"></i> &nbspSite URL</span>
+                <label for="siteURL" class="form-label"></label>
+                <input oninput="validateURL()" type="text"
+                    class="form-control focus-ring focus-ring-warning  mt-2 border border-secondary-subtle" id="siteURL"
+                    placeholder="Website URL" />
+                <p id="urlErr" class="alert alert-danger py-1 d-none">This should be a correct URL. </p>
+            </div>
+        </div>
+
+        <div class="text-center">
+
+            <button onclick="addBookmark()" class="submit1 btn px-5 text-white rounded-2" type="submit">Submit</button>
+        </div>
+        <hr style="border-top: dotted 2px black ;opacity:1" class="mb-4" />
+    </section>
 
 
 
+    <section class="pb-4 ">
+        <div class="container ">
 
-     <!-- START BOOTSTRAP JS -->
-     <script src="./js/bootstrap.bundle.min.js"></script>
-     <!-- END BOOTSTRAP CSS -->
- 
- 
- 
-     <!-- START MAIN JS -->
-     <script src="js/index.js"></script>
-     <!-- END INDEX JS -->
+            <table id="table" class="table text-center ">
+                <thead>
+                    <tr>
+                        <th scope="col">Index</th>
+                        <th scope="col">Website Name</th>
+                        <th scope="col">Visit</th>
+                        <th scope="col">Delete</th>
+                    </tr>
+                </thead>
+                <tbody id="content">
+
+                </tbody>
+            </table>
+
+        </div>
+        <div id="myModal" class="modal">
+            <div class="modal-content">
+                <div class="d-flex justify-content-between"><span class="mb-4"><i
+                            class="fa-solid fa-circle me-2 r"></i><i class="fa-solid fa-circle me-2 y"></i><i
+                            class="fa-solid fa-circle g"></i></span>
+                    <span id="close" onclick="closeMsg()"><i class="fa-solid fa-x"></i></span>
+                </div>
+                <p>Site Name or Url is not valid, Please follow the rules below :</p>
+                <span class="mb-3 rule"><i class="fa-regular fa-circle-right"></i> Site name must contain at least 3
+                    characters</span>
+                <span class="rule"><i class="fa-regular  fa-circle-right"></i> Site URL must be a valid one</span>
+            </div>
+        </div>
+    </section>
+
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="js/index.js"></script>
+
 </body>
+
 </html>

@@ -1,36 +1,165 @@
-header h1{
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    font-size: 80px;
-    font-weight: 700;
-    line-height: normal;
-    font-style: normal;
-    margin-bottom: 40px;
-    margin-top: 45px;
+*,
+*::before,
+*::after {
+
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: "PT Sans Caption";
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    color: rgb(53, 46, 40);
+    background-color: #F7ECDE;
 
 }
-header p,header .quote{
-    font-family: 'Times New Roman', Times, serif;
-    font-size: 35px;
-    font-weight: 400;
-    line-height: normal;
-    font-style: normal;
-    margin-bottom: 40px;
-    
+
+h1 {
+    font-family: "Pacifico";
+    font-weight: 500;
+    font-size: 50px;
+    line-height: 60px;
+    color: rgb(53, 46, 40);
+    position: relative;
+    margin-top: 50px;
+    margin-bottom: 60px;
+    width: fit-content;
+
+
 }
-header .container button{
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 13px;
-    font-weight: 400;
-    line-height: normal;
-    font-style: normal;
-    background-color: blue;
-    color: white !important;
-    padding: 40px 90px;
+
+h2 {
+    font-family: "Righteous";
+    font-weight: 500;
+    font-size: 25px;
+    line-height: 30px;
+
+}
+
+h1::before {
+    content: '';
+    z-index: -1;
+    width: 265px;
+    height: 40%;
+    position: absolute;
+    bottom: 2%;
+    left: 50%;
+    transform: translateX(-50%);
+
+    background-color: #FEC260;
     transition: all 0.3s ease-in-out;
-    margin-bottom: 40px;
-    
-}
-header .container button:hover{
-    background-color: green;
+
 }
 
+h1:hover::before {
+    height: 65%;
+
+}
+
+.in-section {
+    background: rgb(62, 165, 91);
+    background: linear-gradient(135deg, rgba(62, 165, 91, 1) 16%, rgba(228, 219, 37, 1) 86%);
+
+
+    color: transparent;
+    background-clip: text;
+    border-top: dotted 2px black;
+    padding-top: 30px;
+    margin-bottom: 20px;
+
+}
+
+.in-section i {
+    font-size: 24px;
+}
+
+.submit1 {
+    background-color: #D1512D;
+    margin-bottom: 10px;
+}
+
+.submit1:hover {
+    background-color: #BB4120;
+
+}
+
+.table {
+    background-color: #F8F9FA;
+}
+
+.table tbody {
+    font-weight: 400;
+}
+
+.table .subBtn {
+    background-color: #9EB23B;
+    transition: all 0.3s ease-in-out;
+}
+
+.table .subBtn:hover {
+    background-color: #8A9E23;
+
+}
+
+.table .delBtn {
+    background-color: #EB1D36;
+    transition: all 0.3s ease-in-out;
+}
+
+.table .delBtn:hover {
+    background-color: #D30820;
+
+}
+
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 30px 25px;
+    border: 1px solid #888;
+    width: 33%;
+
+}
+
+.modal p {
+    font-size: 21px;
+    font-weight: 700;
+
+}
+
+.modal .rule {
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.modal .rule .fa-regular,
+.modal .r {
+    color: red;
+}
+
+.modal .y {
+    color: orange;
+}
+
+.modal .g {
+    color: green;
+}
+
+.modal #close:hover {
+    cursor: pointer;
+}
