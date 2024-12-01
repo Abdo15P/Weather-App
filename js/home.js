@@ -4,7 +4,7 @@ if (localStorage.getItem("currentUser") !== null) {
     currentUser = JSON.parse(localStorage.getItem("currentUser"));
 }
 
-if (currentUser === null) {
+if (currentUser === null || currentUser === undefined ) {
 
 
     notAllowed();
