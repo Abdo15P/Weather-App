@@ -23,76 +23,27 @@
 </head>
 
 <body>
-    <section class=" container">
-        <dv class=" d-flex justify-content-center">
-            <h1>Bookmarker</h1>
-        </dv>
-
-        <div class="in-section d-flex  justify-content-center">
-            <i class="fa-solid fa-bookmark"></i>
-            <h2> &nbspBookmark your favourite sites&nbsp</h2>
-            <i class="fa-solid fa-bookmark"></i>
+    
+    <section class="container-fluid">
+        <div class=" d-flex justify-content-center mt-5 ">
+        <div class="login1 text-center p-5 ">
+            <h1 class="text-center">Smart Login System</h1>
+            <label for="email" class="form-label"></label>
+                <input oninput="" type="email"
+                    class="form-control  border shadow-none "
+                    id="email" placeholder="Enter your email" />
+                    <p id="emailErr" class="alert text-danger border border-danger my-2 py-1 d-none">Please enter a valid email. </p>
+                    <label for="password" class="form-label"></label>
+                    <input oninput="" type="password"
+                        class="form-control border shadow-none "
+                        id="password" placeholder="Enter your password" />
+                    
+                        <button onclick="validateUser()" class="submit1 mt-5 mb-4 w-100 text-center btn px-5 text-white rounded-2" type="submit">Login</button>
+            <p id="userErr1" class="alert text-danger border border-danger py-1 d-none">Email or password is incorrect. </p>
+            <p id="userErr2" class="alert text-danger border border-danger py-1 d-none">Please enter email and password. </p>
+            <span class=" text-white">Dont have an account? <a href="./register.html">Sign up</a></span>
         </div>
-
-        <div class="inputs container">
-            <div class=" mb-4">
-                <span class="mb-2"><i class="fa-solid fa-book-bookmark"></i> &nbspSite Name</span>
-                <label for="siteName" class="form-label"></label>
-                <input oninput="validateName()" type="text"
-                    class="form-control  focus-ring focus-ring-warning mt-2 border border-secondary-subtle"
-                    id="siteName" placeholder="Bookmark Name" />
-                <p id="nameErr" class="alert alert-danger py-1 d-none">This should be atleast contain 3 characters. </p>
-            </div>
-            <div class=" mb-4 ">
-                <span><i class="fa-solid fa-link"></i> &nbspSite URL</span>
-                <label for="siteURL" class="form-label"></label>
-                <input oninput="validateURL()" type="text"
-                    class="form-control focus-ring focus-ring-warning  mt-2 border border-secondary-subtle" id="siteURL"
-                    placeholder="Website URL" />
-                <p id="urlErr" class="alert alert-danger py-1 d-none">This should be a correct URL. </p>
-            </div>
-        </div>
-
-        <div class="text-center">
-
-            <button onclick="addBookmark()" class="submit1 btn px-5 text-white rounded-2" type="submit">Submit</button>
-        </div>
-        <hr style="border-top: dotted 2px black ;opacity:1" class="mb-4" />
-    </section>
-
-
-
-    <section class="pb-4 ">
-        <div class="container ">
-
-            <table id="table" class="table text-center ">
-                <thead>
-                    <tr>
-                        <th scope="col">Index</th>
-                        <th scope="col">Website Name</th>
-                        <th scope="col">Visit</th>
-                        <th scope="col">Delete</th>
-                    </tr>
-                </thead>
-                <tbody id="content">
-
-                </tbody>
-            </table>
-
-        </div>
-        <div id="myModal" class="modal">
-            <div class="modal-content">
-                <div class="d-flex justify-content-between"><span class="mb-4"><i
-                            class="fa-solid fa-circle me-2 r"></i><i class="fa-solid fa-circle me-2 y"></i><i
-                            class="fa-solid fa-circle g"></i></span>
-                    <span id="close" onclick="closeMsg()"><i class="fa-solid fa-x"></i></span>
-                </div>
-                <p>Site Name or Url is not valid, Please follow the rules below :</p>
-                <span class="mb-3 rule"><i class="fa-regular fa-circle-right"></i> Site name must contain at least 3
-                    characters</span>
-                <span class="rule"><i class="fa-regular  fa-circle-right"></i> Site URL must be a valid one</span>
-            </div>
-        </div>
+    </div>
     </section>
 
     <script src="./js/bootstrap.bundle.min.js"></script>

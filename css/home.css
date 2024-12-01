@@ -11,9 +11,30 @@ body {
     background-color: #24353F;
 
 }
+.navbar {
+    
+    background-color: #24353F !important;
+    box-shadow: 2px 2px 50px black;
+
+}
+.navbar-brand{
+    font-family: sans-serif;
+    font-weight: 400px;
+    font-size: 20px;
+}
+.container1{
+    padding-left: 100px;
+    padding-right: 100px;
+}
+.navbar button{
+    color:rgb(180, 175, 175);
+}
 .login1{
     box-shadow: 2px 2px 50px black;
     width:55%;
+    position: absolute;
+    top:50%;
+    transform: translateY(-50%);
     
 }
 .login1 h1{
@@ -21,6 +42,7 @@ body {
     font-size: 40px;
     line-height: 48px;
     font-weight: 500;
+    
 }
 .login1 input{
     background-color: #24353F !important ;
