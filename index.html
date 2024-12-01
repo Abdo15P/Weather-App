@@ -23,27 +23,30 @@
 </head>
 
 <body>
-    
+
     <section class="container-fluid">
         <div class=" d-flex justify-content-center mt-5 ">
-        <div class="login1 text-center p-5 ">
-            <h1 class="text-center">Smart Login System</h1>
-            <label for="email" class="form-label"></label>
-                <input oninput="" type="email"
-                    class="form-control  border shadow-none "
-                    id="email" placeholder="Enter your email" />
-                    <p id="emailErr" class="alert text-danger border border-danger my-2 py-1 d-none">Please enter a valid email. </p>
-                    <label for="password" class="form-label"></label>
-                    <input oninput="" type="password"
-                        class="form-control border shadow-none "
-                        id="password" placeholder="Enter your password" />
-                    
-                        <button onclick="validateUser()" class="submit1 mt-5 mb-4 w-100 text-center btn px-5 text-white rounded-2" type="submit">Login</button>
-            <p id="userErr1" class="alert text-danger border border-danger py-1 d-none">Email or password is incorrect. </p>
-            <p id="userErr2" class="alert text-danger border border-danger py-1 d-none">Please enter email and password. </p>
-            <span class=" text-white">Dont have an account? <a href="./register.html">Sign up</a></span>
+            <div class="login1 text-center p-5 ">
+                <h1 class="text-center">Smart Login System</h1>
+                <label for="email" class="form-label"></label>
+                <input oninput="" type="email" class="form-control  border shadow-none " id="email"
+                    placeholder="Enter your email" />
+                <p id="emailErr" class="alert text-danger border border-danger my-2 py-1 d-none">Please enter a valid
+                    email. </p>
+                <label for="password" class="form-label"></label>
+                <input oninput="" type="password" class="form-control border shadow-none " id="password"
+                    placeholder="Enter your password" />
+
+                <button onclick="validateUser()"
+                    class="submit1 mt-5 mb-4 w-100 text-center btn px-5 text-white rounded-2"
+                    type="submit">Login</button>
+                <p id="userErr1" class="alert text-danger border border-danger py-1 d-none">Email or password is
+                    incorrect. </p>
+                <p id="userErr2" class="alert text-danger border border-danger py-1 d-none">Please enter email and
+                    password. </p>
+                <span class=" text-white">Dont have an account? <a href="./register.html">Sign up</a></span>
+            </div>
         </div>
-    </div>
     </section>
 
     <script src="./js/bootstrap.bundle.min.js"></script>

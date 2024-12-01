@@ -1,23 +1,21 @@
 let currentUser;
 
 if (localStorage.getItem("currentUser") !== null) {
-    currentUser = JSON.parse(localStorage.getItem("currentUser")); 
-  }
+    currentUser = JSON.parse(localStorage.getItem("currentUser"));
+}
+
+if (currentUser === null) {
 
 
-
-if(currentUser === null){
-
-    
     notAllowed();
 }
-else{
+else {
     displayWelcome(currentUser);
 }
 
 
- function displayWelcome(currentUser) {
-    document.getElementById("content").innerHTML=`<nav class="navbar navbar-expand-lg bg-body-tertiary">
+function displayWelcome(currentUser) {
+    document.getElementById("content").innerHTML = `<nav class="navbar navbar-expand-lg bg-body-tertiary">
         <div class="container container1">
           <a class="navbar-brand text-white" href="#">SMART LOGIN</a>
           
@@ -35,30 +33,13 @@ else{
         </div>
     </div>
     </section>`;
-  }
-  function notAllowed() {
-   /*  document.getElementById("content").innerHTML=`<nav class="navbar navbar-expand-lg bg-body-tertiary">
-        <div class="container container1">
-          <a class="navbar-brand text-white" href="#">SMART LOGIN</a>
-          
-          
-        </div>
-      </nav>
+}
+function notAllowed() {
 
+    window.location.href = './index.html';
+}
 
-
-    <section class="container-fluid">
-        <div class=" d-flex justify-content-center align-items-center  mt-5 ">
-        <div class="login1 text-center p-5 ">
-            <h1 class="text-center">Please <a href="./index.html">login</a> to enter</h1>
-            
-        </div>
-    </div>
-    </section>`; */
-    window.location.href= './index.html';
-  }
-
-function logout(){
+function logout() {
     localStorage.setItem("currentUser", JSON.stringify(null));
-    window.location.href= './index.html';
+    window.location.href = './index.html';
 }

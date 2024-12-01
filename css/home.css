@@ -7,84 +7,92 @@
 }
 
 body {
-    color:#17A2B8;
+    color: #17A2B8;
     background-color: #24353F;
 
 }
+
 .navbar {
-    
+
     background-color: #24353F !important;
     box-shadow: 2px 2px 50px black;
 
 }
-.navbar-brand{
+
+.navbar-brand {
     font-family: sans-serif;
     font-weight: 400px;
     font-size: 20px;
 }
-.container1{
+
+.container1 {
     padding-left: 100px;
     padding-right: 100px;
 }
-.navbar button{
-    color:rgb(180, 175, 175);
+
+.navbar button {
+    color: rgb(180, 175, 175);
 }
-.login1{
+
+.login1 {
     box-shadow: 2px 2px 50px black;
-    width:55%;
+    width: 55%;
     position: absolute;
-    top:50%;
+    top: 50%;
     transform: translateY(-50%);
-    
+
 }
-.login1 h1{
+
+.login1 h1 {
     font-family: sans-serif;
     font-size: 40px;
     line-height: 48px;
     font-weight: 500;
-    
+
 }
-.login1 input{
-    background-color: #24353F !important ;
+
+.login1 input {
+    background-color: #24353F !important;
     color: white !important;
-    
-    
-    
+
+
+
 }
-.login1 input:focus{
+
+.login1 input:focus {
     border: 1px solid #17A2B8 !important;
-    
-    
-    
+
+
+
 }
-::placeholder{
+
+::placeholder {
     font-family: sans-serif;
-    font-size:16px ;
+    font-size: 16px;
     font-weight: 400;
     line-height: 24px;
     color: rgb(180, 175, 175) !important;
-    
-  
+
+
 }
-.login1 button{
+
+.login1 button {
     border: 1px solid #17A2B8;
     color: #17A2B8 !important;
     transition: all 0.3s ease-in-out;
 }
-.login1 button:hover{
-    background-color: #17A2B8 ;
-    color: white !important ;
+
+.login1 button:hover {
+    background-color: #17A2B8;
+    color: white !important;
 }
-.login1 a{
+
+.login1 a {
     text-decoration: none;
     color: inherit;
 }
-.login1 a:hover{
+
+.login1 a:hover {
     text-decoration: underline;
-    
+
 }
-
-
-
-
-
