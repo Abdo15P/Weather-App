@@ -4,69 +4,239 @@
 
     padding: 0;
     margin: 0;
+    box-sizing: border-box;
 }
+
 
 body {
     color: #17A2B8;
     background-color: #24353F;
+    font-family: "Open Sans";
 
 }
 
-.login1 {
-    box-shadow: 2px 2px 50px black;
-    width: 55%;
+.navbar1 {
+    background-color: #1E202B !important;
 
 }
 
-.login1 h1 {
-    font-family: sans-serif;
-    font-size: 40px;
-    line-height: 48px;
-    font-weight: 500;
+.navbar1 .logo {
+    font-size: 54px;
+    color: #15BCDF;
+
 }
 
-.login1 input {
-    background-color: #24353F !important;
+.navbar1 .brand1 {
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.navbar1 .brand2 {
+    font-size: 10px;
+    font-weight: 300;
+}
+
+.navbar1 .navbar-toggler {
+    background-color: #15BCDF;
+}
+
+.navbar1 .collapse ul li a {
     color: white !important;
+    font-size: 14px;
+    font-weight: 400;
+    border: 2px solid transparent;
+    border-radius: 20px;
 
+    transition: all 0.3s ease-in-out;
+
+}
+
+.navbar1 .collapse ul li a:hover {
+    color: #15BCDF !important;
+    border: 2px solid #15BCDF;
 
 
 }
 
-.login1 input:focus {
-    border: 1px solid #17A2B8 !important;
+.navbar1 .collapse ul li .active {
+    color: #15BCDF !important;
+    font-size: 14px;
+    font-weight: 400;
+    border: 2px solid #15BCDF;
+    border-radius: 20px;
 
+}
+
+header {
+    background-image: url(../images/banner.png);
+    background-color: #1E202B;
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    padding-top: 70px;
+}
+
+header .searchbar,
+footer .emailbar {
+    background-color: #1E202B;
+    padding: 0;
+    border-radius: 30px;
+
+    position: relative;
+    display: inline-block;
+    width: 75%;
+
+}
+
+header .searchbar input,
+footer .emailbar input {
+    background-color: #1E202B;
+    border: none;
+    border-radius: 30px;
+    width: 100%;
+    height: 100%;
+    padding: 18px 30px;
+
+
+}
+
+
+header .searchbar input:focus,
+footer .emailbar input:focus {
+    outline: none !important;
+    background-color: #1E202B;
+    border: none !important;
+    color: white;
+
+
+}
+
+header .searchbar button,
+footer .emailbar button {
+    background-color: #15BCDF;
+    color: white;
+    border: none;
+    border-radius: 30px;
+    padding: 12px 35px;
+    position: absolute;
+    right: 6px;
+    top: 5px;
+
+}
+
+header .searchbar button:hover,
+footer .emailbar button:hover {
+    background-color: #15BCDF;
+    color: white;
 
 
 }
 
 ::placeholder {
-    font-family: sans-serif;
-    font-size: 16px;
+    font-size: 14px;
     font-weight: 400;
-    line-height: 24px;
-    color: rgb(180, 175, 175) !important;
-
+    color: rgb(112, 112, 114) !important;
 
 }
 
-.login1 button {
-    border: 1px solid #17A2B8;
-    color: #17A2B8 !important;
+header .weatherchart .row1 {
+    margin: 0 78px;
+}
+
+header .weatherchart .currenttop {
+    background-color: #2D303D;
+    border-top-left-radius: 10px;
+}
+
+header .weatherchart .current {
+    background-color: #323544;
+    padding-bottom: 30px;
+    border-bottom-left-radius: 10px;
+}
+
+header .weatherchart .middletop {
+    background-color: #222530;
+}
+
+header .weatherchart .middle {
+    background-color: #262936;
+    padding-bottom: 115px;
+}
+
+header .weatherchart .cardtop {
+    padding: 8px 6px;
+}
+
+header .weatherchart .righttop {
+    background-color: #2D303D;
+    border-top-right-radius: 10px;
+}
+
+header .weatherchart .right {
+    background-color: #323544;
+    padding-bottom: 115px;
+    border-bottom-right-radius: 10px;
+}
+
+
+header .weatherchart .currentcity {
+    font-size: 18px;
+    font-weight: 400;
+}
+
+header .weatherchart .currenttemp {
+    font-size: 68px;
+    font-weight: 700;
+}
+
+
+header .weatherchart .currentcond {
+    font-size: 14px;
+    font-weight: 300;
+}
+
+
+header .weatherchart .major {
+    font-size: 24px;
+    font-weight: 700;
+}
+
+header .weatherchart .minor {
+    font-size: 16px;
+    font-weight: 300;
+}
+
+header .weatherchart .condition,
+footer .copyright {
+    font-size: 14px;
+    font-weight: 300;
+}
+
+footer {
+    background-color: #262936;
+    padding: 0 170px;
+}
+
+footer .emailbar {
+    width: 100%;
+    margin-right: 170px;
+}
+
+footer i {
+    background-color: #1E202B;
+    color: #009AD3;
     transition: all 0.3s ease-in-out;
+
 }
 
-.login1 button:hover {
-    background-color: #17A2B8;
-    color: white !important;
+footer .fa-facebook-f {
+    padding-left: 12px;
+    padding-right: 12px;
 }
 
-.login1 a {
-    text-decoration: none;
-    color: inherit;
-}
-
-.login1 a:hover {
-    text-decoration: underline;
+footer i:hover {
+    background-color: #009AD8;
+    color: #FFFFFF;
+    cursor: pointer;
 
 }

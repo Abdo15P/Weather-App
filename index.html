@@ -4,12 +4,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login</title>
+    <title>Weather</title>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=PT+Sans+Caption:wght@400;700&family=Pacifico&family=Righteous&display=swap"
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
         rel="stylesheet">
 
     <!-- START BOOTSTRAP -->
@@ -23,31 +22,83 @@
 </head>
 
 <body>
+    <nav class="navbar navbar1 navbar-expand-lg bg-body-tertiary text-white">
+        <div class="container ">
+            <i class="fa-solid logo fa-cloud-bolt me-lg-4  ms-lg-5 my-4"></i>
+            <div class="d-flex flex-column">
+                <a class="navbar-brand brand1 text-white" href="#">Weather</a>
+                <span class="brand2">Accurate weather from anywhere in the world</span>
 
-    <section class="container-fluid">
-        <div class=" d-flex justify-content-center mt-5 ">
-            <div class="login1 text-center p-5 ">
-                <h1 class="text-center">Smart Login System</h1>
-                <label for="email" class="form-label"></label>
-                <input oninput="" type="email" class="form-control  border shadow-none " id="email"
-                    placeholder="Enter your email" />
-                <p id="emailErr" class="alert text-danger border border-danger my-2 py-1 d-none">Please enter a valid
-                    email. </p>
-                <label for="password" class="form-label"></label>
-                <input oninput="" type="password" class="form-control border shadow-none " id="password"
-                    placeholder="Enter your password" />
+            </div>
+            <button class="navbar-toggler " type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse  " id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto me-5  mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active px-4 me-2" aria-current="page" href="#">Home</a>
+                    </li>
 
-                <button onclick="validateUser()"
-                    class="submit1 mt-5 mb-4 w-100 text-center btn px-5 text-white rounded-2"
-                    type="submit">Login</button>
-                <p id="userErr1" class="alert text-danger border border-danger py-1 d-none">Email or password is
-                    incorrect. </p>
-                <p id="userErr2" class="alert text-danger border border-danger py-1 d-none">Please enter email and
-                    password. </p>
-                <span class=" text-white">Dont have an account? <a href="./register.html">Sign up</a></span>
+                    <li class="nav-item">
+                        <a class="nav-link px-4  me-2 " href="#">News</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link px-4 me-2" href="#">Live Cameras</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link px-4 me-2" href="#">Photos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link px-4 me-2" href="#">Contact</a>
+                    </li>
+                </ul>
             </div>
         </div>
-    </section>
+    </nav>
+
+
+
+
+    <header class="d-flex flex-column justify-content-center ">
+        <div class="searchbar container mb-5">
+
+            <input id="searchInput" oninput="searchWeather()" class="   " type="search"
+                placeholder="Find your location..." aria-label="Search">
+            <button class="btn " type="submit">Find</button>
+
+        </div>
+        <div id="forecast" class="weatherchart container-fluid container-lg d-flex text-white-50 mb-5">
+
+        </div>
+        
+    </header>
+    <footer class="pt-5 pb-5">
+        <div class="row container-fluid container-lg mb-3  ">
+            <div class="col-12 col-lg-8">
+                <div class="emailbar ">
+
+                    <input class=" me-0 me-lg-2" type="email" placeholder="Enter your email to subscribe..."
+                        aria-label="Subscribe">
+                    <button class="btn " type="submit">Subscribe</button>
+
+                </div>
+            </div>
+            <div class="socials col-12 col-xl-3 offset-lg-1">
+                <i class="fa-brands fa-facebook-f rounded-circle fs-5  py-2 mt-4 md-2  me-2"></i>
+                <i class="fa-brands fa-twitter rounded-circle fs-5  p-2 mt-4 md-2 me-2"></i>
+                <i class="fa-brands fa-google-plus-g rounded-circle fs-5  p-2 mt-4 md-2 me-2"></i>
+                <i class="fa-brands fa-pinterest rounded-circle fs-5  p-2 mt-4 md-2 me-2"></i>
+            </div>
+        </div>
+        <span class=" copyright text-white-50 ms-3">Copyright 2014 Company name. Designed by Themezy. All rights
+            reserved</span>
+
+    </footer>
+
+
+
 
     <script src="./js/bootstrap.bundle.min.js"></script>
     <script src="js/index.js"></script>
