@@ -18,7 +18,7 @@ async function getWeather(name) {
 
 
   try {
-    let response = await fetch(`http://api.weatherapi.com/v1/forecast.json?key=a11cd1713a5240e095252830240912&q=${name}&days=7`, { headers: { 'Content-Type': 'application/json' } });
+    let response = await fetch(`https://api.weatherapi.com/v1/forecast.json?key=a11cd1713a5240e095252830240912&q=${name}&days=7`, { headers: { 'Content-Type': 'application/json' } });
     weatherResponse = await response.json();
   } catch (error) {
     console.log('There was an error', error);
